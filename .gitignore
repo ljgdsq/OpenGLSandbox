@@ -1,0 +1,44 @@
+# Build directories
+/build/
+/out/
+/bin/
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+
+# Generated project files (Visual Studio / CMake generators)
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.vcproj
+*.opensdf
+*.sdf
+*.pdb
+*.ilk
+*.obj
+*.idb
+*.ipch
+*.tlog
+*.lastbuildstate
+
+# IDE settings
+.vs/
+
+.idea/
+
+# Runtime artifacts
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Logs and temp
+*.log
+*.tmp
+*.cache
