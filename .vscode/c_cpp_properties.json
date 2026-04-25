@@ -14,7 +14,6 @@
                 "${workspaceFolder}/third/glad/include",
                 "${workspaceFolder}/third/glfw/include",
                 "${workspaceFolder}/third/glm",
-                "${workspaceFolder}/third/stb"
                 "${workspaceFolder}/third/stb",
                 "${workspaceFolder}/learnopengl"
             ],
