@@ -15,10 +15,34 @@
                 "${workspaceFolder}/third/glfw/include",
                 "${workspaceFolder}/third/glm",
                 "${workspaceFolder}/third/stb"
+                "${workspaceFolder}/third/stb",
+                "${workspaceFolder}/learnopengl"
             ],
             "macFrameworkPath": [
                 "/System/Library/Frameworks",
                 "/Library/Frameworks"
+            ]
+        },
+        {
+            "name": "Win32",
+            "compilerPath": "cl.exe",
+            "intelliSenseMode": "windows-msvc-x64",
+            "cStandard": "c11",
+            "cppStandard": "c++20",
+            "includePath": [
+                "${workspaceFolder}",
+                "${workspaceFolder}/glsandbox/include",
+                "${workspaceFolder}/third/glad/include",
+                "${workspaceFolder}/third/glfw/include",
+                "${workspaceFolder}/third/glm",
+                "${workspaceFolder}/third/stb",
+                "${workspaceFolder}/learnopengl"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE",
+                "GLSANDBOX_ASSET_DIR=\"${workspaceFolder}/assets\""
             ]
         }
     ]

@@ -1,0 +1,84 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "CMake Configure",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "-S",
+                ".",
+                "-B",
+                "build"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Build Minimal Quad",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "build",
+                "--config",
+                "Debug",
+                "--target",
+                "01_textured_box_minimal"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "dependsOn": "CMake Configure",
+            "problemMatcher": [
+                "$msCompile"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Run Minimal Quad",
+            "type": "shell",
+            "command": "${workspaceFolder}/build/examples/01_textured_box_minimal/Debug/01_textured_box_minimal.exe",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "dependsOn": "Build Minimal Quad",
+            "problemMatcher": []
+        },
+        {
+            "label": "Build Template Quad",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "build",
+                "--config",
+                "Debug",
+                "--target",
+                "02_textured_box_template"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "dependsOn": "CMake Configure",
+            "problemMatcher": [
+                "$msCompile"
+            ]
+        },
+        {
+            "label": "Run Template Quad",
+            "type": "shell",
+            "command": "${workspaceFolder}/build/examples/02_textured_box_template/Debug/02_textured_box_template.exe",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "dependsOn": "Build Template Quad",
+            "problemMatcher": []
+        }
+    ]
+}
